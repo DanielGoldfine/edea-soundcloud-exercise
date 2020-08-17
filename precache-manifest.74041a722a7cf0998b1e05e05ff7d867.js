@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "59dd3c04783e49cc35fbc0e15fa6518a",
+    "revision": "5a5849c7bfe9a02108a40dda80a26969",
     "url": "/edea-soundcloud-exercise/index.html"
   },
   {
-    "revision": "092268106afd5a9e7a72",
+    "revision": "4234c65507c2672cc976",
     "url": "/edea-soundcloud-exercise/static/css/main.9d919576.chunk.css"
   },
   {
-    "revision": "dd87b2476b1153794f18",
-    "url": "/edea-soundcloud-exercise/static/js/2.df24eab6.chunk.js"
+    "revision": "5fb42bdf314d521d21e0",
+    "url": "/edea-soundcloud-exercise/static/js/2.20c0b4f7.chunk.js"
   },
   {
     "revision": "6b876e448e44c278309fce9ee4d4d733",
-    "url": "/edea-soundcloud-exercise/static/js/2.df24eab6.chunk.js.LICENSE.txt"
+    "url": "/edea-soundcloud-exercise/static/js/2.20c0b4f7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "092268106afd5a9e7a72",
-    "url": "/edea-soundcloud-exercise/static/js/main.a20f7ea8.chunk.js"
+    "revision": "4234c65507c2672cc976",
+    "url": "/edea-soundcloud-exercise/static/js/main.1915aa5a.chunk.js"
   },
   {
     "revision": "e7d395fea73fa67274d5",
