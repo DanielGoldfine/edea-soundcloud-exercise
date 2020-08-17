@@ -1,0 +1,48 @@
+.track-player-container {
+    background-color: $darkGrey;
+    height: 550px;
+    .img-wrapper {
+        width: 90%;
+        margin-top: 40px;
+        padding: 0 20px;
+        img {
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 25px;
+        }
+        .track-img {
+            width: 300px;
+        }
+    }
+    h2 {
+        text-align: center;
+        font-size: rem(18px);
+        max-width: 500px;
+        margin-bottom: 10px;
+    }
+    p {
+        margin-bottom: 10px;
+        color: $mediumGreyText;
+    }
+    .sc-bdVaJa {
+        width: 80%;
+        .sc-gzVnrw {
+            background-color: $mediumGrey;
+        }
+        display: flex;
+        align-items: center;
+        height: 100px;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        h4 {
+            display: none;
+        }
+        svg {
+            fill: white;
+        }
+        .sc-htoDjs {
+            background: $mainClr;
+        }
+    }
+}

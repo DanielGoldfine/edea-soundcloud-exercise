@@ -1,0 +1,63 @@
+.recent-searches-container {
+    border-left: 1px solid $mediumGrey;
+    background-color: $darkGrey;
+    display: grid;
+    height: 550px;
+    grid-template-rows: 1fr 450px 1fr;
+    .header {
+        grid-row: 1;
+        background-color: $mediumGrey;
+        h3 {
+            text-transform: uppercase;
+        }
+    }
+    .recent-search-list {
+        grid-row: 2;
+        .recent-search-preview {
+            button {
+                cursor: pointer;
+                font-family: roboto-bold;
+                color: white;
+                font-size: rem(16px);
+                outline: none;
+                background-color: $darkGrey;
+                border: none;
+                height: 90px;
+                width: 100%;
+                border-top: 1px solid $mediumGrey;
+                border-bottom: 1px solid $mediumGrey;
+                transition: 0.2s;
+            }
+            button:hover {
+                color: $mainClr;
+                background-color: $mediumGrey;
+            }
+        }
+    }
+    .delete-icn-wrapper {
+        grid-row: 3;
+        padding: 0 20px;
+        border-top: 1px solid $mediumGrey;
+        svg {
+            cursor: pointer;
+            path {
+                fill: white;
+            }
+        }
+        &.unmute {
+            svg:hover {
+                path {
+                    fill: $mainClr;
+                }
+            }
+        }
+        &.mute {
+            svg {
+                cursor: default;
+                path {
+                    fill: $muteOnMediumGrey;
+                }
+            }
+        }
+    }
+}

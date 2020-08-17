@@ -1,0 +1,194 @@
+.tracks-dashboard-container {
+    width: 100%;
+    position: relative;
+    border-right: 1px solid $mediumGrey;
+    display: grid;
+    height: 550px;
+    grid-template-rows: 1fr 450px 1fr;
+    .seach-bar {
+        grid-row: 1;
+    }
+    .tracks-list {
+        grid-row: 2;
+        height: 100%;
+        overflow: auto;
+        position: relative;
+        .track-list-item {
+            height: 90px;
+            border-top: 1px solid $mediumGrey;
+            border-bottom: 1px solid $mediumGrey;
+            transition: 0.2s;
+            padding-inline-start: 20px;
+            cursor: pointer;
+            .img-wrapper {
+                padding: 5px 0;
+                height: 100%;
+                margin-inline-end: 15px;
+                position: relative;
+                &:before {
+                    content: "";
+                    background-image: url("../../assets/icns/play-circle-solid.svg");
+                    background-repeat: no-repeat;
+                    background-size: 35px 35px;
+                    background-position: center;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: rgba(0, 0, 0, 0.452);
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.2s;
+                    opacity: 0;
+                }
+                img {
+                    height: 100%;
+                }
+            }
+            .img-wrapper:hover {
+                &:before {
+                    opacity: 1;
+                }
+            }
+            .details {
+                h4 {
+                    color: white;
+                    font-size: rem(14px);
+                    font-family: roboto-light;
+                    margin-bottom: 6px;
+                    &.highlight {
+                        color: $mainClr;
+                    }
+                }
+                p {
+                    font-size: rem(12px);
+                    color: $mediumGreyText;
+                }
+            }
+        }
+        &.list {
+            .track-list-item:hover {
+                background-color: $mediumGrey;
+            }
+        }
+        &.tile {
+            padding-top: 25px;
+            display: grid;
+            justify-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            .track-list-item {
+                cursor: default;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-inline-start: 0px;
+                border: none;
+                width: 150px;
+                height: 290px;
+                .img-wrapper {
+                    cursor: pointer;
+                    width: 100%;
+                    height: auto;
+                    margin: 0;
+                    margin-bottom: 15px;
+                    img {
+                        height: unset;
+                        width: 100%;
+                    }
+                }
+                .details:hover {
+                    h4 {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .tracks-list::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .tracks-list::-webkit-scrollbar-thumb {
+        background-color: $mediumGrey;
+        border-radius: 999px;
+        outline: 1px solid slategrey;
+    }
+
+    .list-controllers {
+        grid-row: 3;
+        width: 100%;
+        padding: 0 20px;
+        background-color: $mediumGrey;
+        .paging-btns-container {
+            .paging-btn {
+                cursor: pointer;
+                outline: none;
+                background-color: rgba(255, 255, 255, 0);
+                border: none;
+                svg {
+                    width: 20px;
+                    path {
+                        fill: white;
+                    }
+                }
+                svg:hover {
+                    path {
+                        fill: $mainClr;
+                    }
+                }
+                &.mute {
+                    cursor: default;
+                    svg {
+                        width: 20px;
+                        path {
+                            fill: $muteOnMediumGrey;
+                        }
+                    }
+                }
+            }
+        }
+        .preview-mode-btns-container {
+            .tile-btn,
+            .list-btn {
+                svg {
+                    cursor: default;
+                    width: 30px;
+                    height: 30px;
+                    path {
+                        fill: white;
+                    }
+                }
+                &.mute {
+                    svg {
+                        cursor: pointer;
+                        path {
+                            fill: $muteOnMediumGrey;
+                        }
+                    }
+                    svg:hover {
+                        path {
+                            fill: $mainClr;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.img-transition {
+    transition: .4s;
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+    img {
+        width: 78px;
+        transition: .4s;
+        &.tile {
+            width: 150px;
+        }
+    }
+}

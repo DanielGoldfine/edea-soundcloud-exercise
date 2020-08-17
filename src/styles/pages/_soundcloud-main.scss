@@ -1,0 +1,30 @@
+.soundcloud-main-container {
+    background-color: $darkGrey;
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+    .grid-container {
+        border-top: 1px solid $mediumGrey;
+        border-bottom: 1px solid $mediumGrey;
+        display: grid;
+        grid-template-columns:
+            minmax(350px, 1fr)
+            minmax(350px, 600px)
+            minmax(350px, 1fr);
+    }
+    @media screen and (max-width: 1220px) {
+        padding-top: 0px;
+        .grid-container {
+            grid-template-columns: 1fr;
+        }
+        .tracks-dashboard-container {
+            grid-row: 1;
+        }
+        .track-player-container {
+            grid-row: 2;
+        }
+        .recent-searches-container {
+            grid-row: 3;
+        }
+    }
+}

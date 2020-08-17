@@ -1,0 +1,46 @@
+.seach-bar {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding-inline-start: 20px;
+    background-color: $mediumGrey;
+    .search-input {
+        font-size: rem(16px);
+        font-family: roboto-light;
+        color: white;
+        background-color: $mediumGrey;
+        outline: none;
+        background-color: none;
+        border: none;
+        width: 90%;
+        height: 80%;
+    }
+    .search-input::placeholder {
+        color: $mainClr;
+      }
+    .search-btn-wrapper {
+        border-left: 1px solid $darkGrey;
+        width: 70px;
+        height: 100%;
+        cursor: pointer;
+        svg {
+            width: 40px;
+            height: 40px;
+            path {
+                fill: $mainClr;
+            }
+        }
+        .MuiCircularProgress-root {
+            color: $mainClr;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
