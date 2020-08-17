@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/edea-soundcloud-exercise/static/css/main.9d919576.chunk.css",
+    "main.js": "/edea-soundcloud-exercise/static/js/main.a20f7ea8.chunk.js",
+    "main.js.map": "/edea-soundcloud-exercise/static/js/main.a20f7ea8.chunk.js.map",
+    "runtime-main.js": "/edea-soundcloud-exercise/static/js/runtime-main.e028e4f0.js",
+    "runtime-main.js.map": "/edea-soundcloud-exercise/static/js/runtime-main.e028e4f0.js.map",
+    "static/js/2.df24eab6.chunk.js": "/edea-soundcloud-exercise/static/js/2.df24eab6.chunk.js",
+    "static/js/2.df24eab6.chunk.js.map": "/edea-soundcloud-exercise/static/js/2.df24eab6.chunk.js.map",
+    "index.html": "/edea-soundcloud-exercise/index.html",
+    "precache-manifest.4b0e2ca313a7027a18cc682f3b1b6ad6.js": "/edea-soundcloud-exercise/precache-manifest.4b0e2ca313a7027a18cc682f3b1b6ad6.js",
+    "service-worker.js": "/edea-soundcloud-exercise/service-worker.js",
+    "static/css/main.9d919576.chunk.css.map": "/edea-soundcloud-exercise/static/css/main.9d919576.chunk.css.map",
+    "static/js/2.df24eab6.chunk.js.LICENSE.txt": "/edea-soundcloud-exercise/static/js/2.df24eab6.chunk.js.LICENSE.txt",
+    "static/media/global.scss": "/edea-soundcloud-exercise/static/media/play-circle-solid.303ae944.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e028e4f0.js",
+    "static/js/2.df24eab6.chunk.js",
+    "static/css/main.9d919576.chunk.css",
+    "static/js/main.a20f7ea8.chunk.js"
+  ]
+}
