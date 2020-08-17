@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { updateCenterImgPos } from '../../store/actions/appActions';
-
 import Player from 'react-soundcloud-player'
 
 export default function TrackPlayer() {
@@ -44,11 +43,10 @@ export default function TrackPlayer() {
         dispatch(updateCenterImgPos(params))
     }
 
-
     return (
         <main className="track-player-container flex column align-center justify-between">
             <div ref={imgWrapper} className="img-wrapper flex align-center justify-center">
-                {!currTrack && <img src="./record-player.png" alt="" />}
+                {!currTrack && <img src="../../assets/record-player.png" alt="" />}
                 {currTrack && <img className="track-img" src={currTrack.artwork_url} alt="" />}
             </div>
 

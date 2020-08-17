@@ -4,7 +4,7 @@ export default function TrackPreview({ track, chooseTrack, titleLimit, currPlayi
 
     const elImg = useRef();
 
-    const imgUrl = track.artwork_url ? track.artwork_url : './missing-image.jpg'
+    const imgUrl = track.artwork_url ? track.artwork_url : '../../assets/missing-image.jpg'
 
     const titleToDisplay = (track.title.length < titleLimit) ? track.title : track.title.slice(0, titleLimit) + '...';
     const titleClassName = currPlayingId !== track.id ? '' : 'highlight';
