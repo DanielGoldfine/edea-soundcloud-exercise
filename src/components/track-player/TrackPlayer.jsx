@@ -46,7 +46,7 @@ export default function TrackPlayer() {
     return (
         <main className="track-player-container flex column align-center justify-between">
             <div ref={imgWrapper} className="img-wrapper flex align-center justify-center">
-                {!currTrack && <img src="../../assets/record-player.png" alt="" />}
+                {!currTrack && <img src="./record-player.png" alt="" />}
                 {currTrack && <img className="track-img" src={currTrack.artwork_url} alt="" />}
             </div>
 
